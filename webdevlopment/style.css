@@ -1,0 +1,198 @@
+body {
+    font-family: "Arial", sans-serif;
+    color: #0b1f33;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #0b1f33;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Arial Black", sans-serif;
+}
+
+h2 {
+    color: #0b1f33;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Arial Black", sans-serif;
+}
+
+h3 {
+    color: #0b1f33;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Arial Black", sans-serif;
+}
+
+
+p {
+    color:#0b1f33;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+}
+
+.hero {
+    background-image: url('football.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 30px;
+}
+
+.hero h1 {
+   color: #FFFFFF;
+   font-size: 40px;
+   font-family: "Arial Black", sans-serif;
+   margin-bottom: 20px;
+}
+
+.hero p {
+   color: #FFFFFF;
+   font-size: 18px;
+   font-family: "Arial", sans-serif;
+   margin-bottom: 30px;
+}
+
+
+.hero-button {
+    display: inline-block;
+    background-color: #c9a227;
+    color: #0b1f33;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: #FFFFFF;
+}
+
+.resume-link {
+    display: inline-block;
+    background-color: #c9a227;
+    color: #0b1f33;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 2px solid #0b1f33;
+}
+
+.resume-link:hover {
+    background-color: #c9a227;
+    color:#FFFFFF
+}
+
+.strengths-list {
+    list-style-type: square;
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.strengths-list li {
+    color: #0b1f33;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 12px;
+}
+
+.strengths-list li:hover {
+    color: #c9a227;
+}
+
+.reflection-box {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border:2px solid #c9a227;
+    background: color #f5f7fa;
+    box-sizing:border-box;
+}
+
+.first-paragraph::first letter {
+    color:#c9a227;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.reflection-box p:not(.first-paragraph){
+    text-indent: 30px;
+}
+
+.reflection-box p{
+    color:#0b1f33;
+    font-family: arial, sans-serif;
+    font-size:18px;
+    line-height: 1.7;
+    margin-bottom:18px;
+}
+
+.reflection-content h1,
+.reflection-content h2{
+    color:#0b1f33;
+    text-align: center;
+    font-family:"arial black", sans-serif
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+.headshot-section {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.headshot {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border: 4px solid #c9a227;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.video-section {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.resume-video {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto;
+    border: 4px solid #c9a227;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 650px) {
+    .media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headshot-section,
+    .video-section {
+        width: 100%;
+    }
+}
