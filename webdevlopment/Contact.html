@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+    Name: Xaishaun Edwards
+    Date: 9/9/2026
+    Course: Web design development
+    Description: Boilerplate template
+-->
+<html lang="en">
+
+<head>
+    <!-- this defines the character encoding for the page-->
+    <meta charset="UTF-8">
+
+    <!-- this makes the page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--this will be the title-->
+    <title>Xaishaun's Starter template</title>
+
+    <!--Link to the CSS file-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+    <!-- this is my header -->
+    <header class="site-header">
+        <img src="logo.jpeg" alt="Resume Logo" class="logo">
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Career.html">Career</a></li>
+            <li><a href="Reflection.html">Reflection</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <!-- this is where ill put my logo-->
+    </header>
+
+  
+
+<main class="contact-container">
+
+    <h1>Contact Me</h1>
+    <p>Use the form below to get in touch with me.</p>
+
+    <form class="contact-form">
+
+        
+        <label for="title">Title:</label>
+        <select id="title" name="title" required>
+            <option value="" disabled selected>What are you?</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Other">Other</option>
+        </select>
+
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"
+               placeholder="Enter your full name" required>
+
+      
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email address" required>
+
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"
+                  placeholder="Write your message here"
+                  rows="5" required></textarea>
+
+        
+        <label for="reason">Reason for Contact:</label>
+        <select id="reason" name="reason" required>
+            <option value="" disabled selected>Select a reason</option>
+            <option value="Football">Football</option>
+            <option value="Recruiting">Recruiting</option>
+            <option value="General Question">Questions</option>
+            <option value="Other">Other</option>
+        </select>
+
+        
+        <button type="submit">Submit</button>
+
+    </form>
+
+</main>
+
+
+    <!--this is my footer-->
+    <footer>
+        <p>Xaishaun Edwards, 9/9/2026</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+body {
+    font-family: "Arial", sans-serif;
+    color: #0b1f33;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #0b1f33;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Arial Black", sans-serif;
+}
+
+h2 {
+    color: #0b1f33;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Arial Black", sans-serif;
+}
+
+h3 {
+    color: #0b1f33;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Arial Black", sans-serif;
+}
+
+
+p {
+    color:#0b1f33;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+}
+
+.hero {
+    background-image: url('football.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 30px;
+}
+
+.hero h1 {
+   color: #FFFFFF;
+   font-size: 40px;
+   font-family: "Arial Black", sans-serif;
+   margin-bottom: 20px;
+}
+
+.hero p {
+   color: #FFFFFF;
+   font-size: 18px;
+   font-family: "Arial", sans-serif;
+   margin-bottom: 30px;
+}
+
+
+.hero-button {
+    display: inline-block;
+    background-color: #c9a227;
+    color: #0b1f33;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: #FFFFFF;
+}
+
+.resume-link {
+    display: inline-block;
+    background-color: #c9a227;
+    color: #0b1f33;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 2px solid #0b1f33;
+}
+
+.resume-link:hover {
+    background-color: #c9a227;
+    color:#FFFFFF
+}
+
+.strengths-list {
+    list-style-type: square;
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.strengths-list li {
+    color: #0b1f33;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    margin-bottom: 12px;
+}
+
+.strengths-list li:hover {
+    color: #c9a227;
+}
+
+.reflection-box {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border:2px solid #c9a227;
+    background: color #f5f7fa;
+    box-sizing:border-box;
+}
+
+.first-paragraph::first letter {
+    color:#c9a227;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.reflection-box p:not(.first-paragraph){
+    text-indent: 30px;
+}
+
+.reflection-box p{
+    color:#0b1f33;
+    font-family: arial, sans-serif;
+    font-size:18px;
+    line-height: 1.7;
+    margin-bottom:18px;
+}
+
+.reflection-content h1,
+.reflection-content h2{
+    color:#0b1f33;
+    text-align: center;
+    font-family:"arial black", sans-serif
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+.headshot-section {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.headshot {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border: 4px solid #c9a227;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.video-section {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.resume-video {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto;
+    border: 4px solid #c9a227;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 650px) {
+    .media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headshot-section,
+    .video-section {
+        width: 100%;
+    }
+}
+
+.footer {
+    background-image: url("football.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-color: #0b1f33;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer h3 {
+    color: #c9a227;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.footer img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+@media print {
+
+    @page {
+        margin: 1in;
+    }
+
+    body {
+        font-family: Georgia, "Times New Roman", serif;
+        color: black;
+        background: white;
+        font-size: 12pt;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    .about-print,
+    .about-print *,
+    .print-footer,
+    .print-footer * {
+        visibility: visible;
+    }
+
+    .about-print {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .print-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .print-footer img,
+    .logo,
+    nav {
+        display: none;
+    }
+
+    h1, h2, p, ul {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    color: #0b1f33;
+    border-radius: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #0b1f33;
+    color: #ffffff;
+    border: 2px solid #c9a227;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.contact-form button:hover {
+    background-color: #c9a227;
+    color: #0b1f33;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}
