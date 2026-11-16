@@ -1,0 +1,125 @@
+
+.site-header {
+    background-color: #0b1f33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 15px;
+    position: relative;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    color: #c9a227;
+    text-decoration: underline;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #0b1f33;
+    border: 1px solid #c9a227;
+    z-index: 1000;
+}
+
+.dropdown:hover > .dropdown-menu,
+.dropdown:focus-within > .dropdown-menu {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .hamburger {
+        display: block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 220px;
+        background-color: #0b1f33;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked ~ .nav-menu {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        color: white;
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+    }
+}
